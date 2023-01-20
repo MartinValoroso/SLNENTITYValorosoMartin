@@ -17,8 +17,8 @@ namespace WindowsEFDatos.Models
         [Column(TypeName ="varchar")]
         [StringLength(50)]
         [Required]
-
         public string Nombre { get; set; }
+
         public DateTime FechaInicioActividades { get; set; }
 
         public List<Avion> Aviones { get; set; }

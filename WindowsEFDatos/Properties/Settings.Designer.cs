@@ -26,7 +26,8 @@ namespace WindowsEFDatos.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\sqlexpress02;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\sqlexpress02;Initial Catalog=BasedeDatosLineaAerea;Integrated Secur" +
+            "ity=True")]
         public string KeyDB {
             get {
                 return ((string)(this["KeyDB"]));

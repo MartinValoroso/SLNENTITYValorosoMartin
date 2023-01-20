@@ -39,6 +39,8 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtLineaId = new System.Windows.Forms.TextBox();
+            this.lblLinea = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GridAvion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,11 +143,29 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // txtLineaId
+            // 
+            this.txtLineaId.Location = new System.Drawing.Point(411, 238);
+            this.txtLineaId.Name = "txtLineaId";
+            this.txtLineaId.Size = new System.Drawing.Size(304, 44);
+            this.txtLineaId.TabIndex = 11;
+            // 
+            // lblLinea
+            // 
+            this.lblLinea.AutoSize = true;
+            this.lblLinea.Location = new System.Drawing.Point(239, 241);
+            this.lblLinea.Name = "lblLinea";
+            this.lblLinea.Size = new System.Drawing.Size(150, 37);
+            this.lblLinea.TabIndex = 12;
+            this.lblLinea.Text = "LINEA ID";
+            // 
             // FrmAvion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1863, 810);
+            this.Controls.Add(this.lblLinea);
+            this.Controls.Add(this.txtLineaId);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnModificar);
@@ -179,5 +199,7 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtLineaId;
+        private System.Windows.Forms.Label lblLinea;
     }
 }

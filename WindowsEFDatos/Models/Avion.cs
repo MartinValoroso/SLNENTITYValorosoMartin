@@ -11,7 +11,7 @@ namespace WindowsEFDatos.Models
     [Table("Avion")]
     public class Avion
     {
-        [Key] 
+        [Key]
         public int AvionID { get; set; }
 
         public int Capacidad { get; set; }
@@ -21,7 +21,12 @@ namespace WindowsEFDatos.Models
         [Required]
         public string Demonimacion { get; set; }
 
-        public LineaAerea lineaaerea { get; set; }
+
+        public int IdLinea { get; set; }
+
+        [ForeignKey("IdLinea")]
+        public LineaAerea LineaAerea { get; set; }
+
 
     }
 }

@@ -28,6 +28,7 @@ namespace WindowsEFDatos.Dac
             Avion AvionOrigen = context.Aviones.Find(avion.AvionID); 
             AvionOrigen.Capacidad = avion.Capacidad;
             AvionOrigen.Demonimacion = avion.Demonimacion;
+            
             return context.SaveChanges();
 
         }

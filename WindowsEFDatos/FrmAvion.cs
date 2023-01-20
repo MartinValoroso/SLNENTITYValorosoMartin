@@ -23,7 +23,7 @@ namespace WindowsEFDatos
         {
             {
                 
-                Avion avion = new Avion() { Capacidad = Convert.ToInt32(txtCapacidad.Text), Demonimacion= txtDenominacion.Text };
+                Avion avion = new Avion() { Capacidad = Convert.ToInt32(txtCapacidad.Text), Demonimacion= txtDenominacion.Text, IdLinea = Convert.ToInt32(txtLineaId.Text) };
 
                 int filasAfectadas = AbmAvion.Insert(avion);
 
@@ -50,13 +50,16 @@ namespace WindowsEFDatos
         }
         private void Mostrartodoslosaviones()
         {
+            
             GridAvion.DataSource = AbmAvion.SelectAll();
 
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Avion avion = new Avion() { Capacidad = Convert.ToInt32(txtCapacidad.Text), Demonimacion = txtDenominacion.Text };
+            Avion avion = new Avion() { Capacidad = Convert.ToInt32(txtCapacidad.Text), Demonimacion = txtDenominacion.Text, AvionID= Convert.ToInt32(txtId.Text) };
 
             int filasAfectadas = AbmAvion.Update(avion);
 
@@ -70,7 +73,7 @@ namespace WindowsEFDatos
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            Avion avion = new Avion() { Capacidad = Convert.ToInt32(txtCapacidad.Text), Demonimacion = txtDenominacion.Text };
+            Avion avion = new Avion() { AvionID=Convert.ToInt32(txtId.Text) };
 
             int filasAfectadas = AbmAvion.Delete(avion);
 
